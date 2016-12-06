@@ -15,4 +15,4 @@ It is most important in this industry to store and process these logs in such a 
 
 Below is a ...
 
-![space time tradeoff compression options]({{ page.url | prepend: site.github.url }}images/yahoo-compression.png "Space-Time Tradeoff Compression")
+![space time tradeoff compression options]({{ page.url }}images/yahoo-compression.png "Space-Time Tradeoff Compression")
