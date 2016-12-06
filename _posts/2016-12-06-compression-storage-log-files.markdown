@@ -1,6 +1,8 @@
 ---
 title: Compression & data storage for log files
 layout: post
+categories: data hive logs
+tags: data hive logs
 ---
 
 As the internet grows, and the applications we build increase in complexity by utilising user data to make smarter more personalised decisions; storing and processing logs from "Log File Applications" is an increasing challenge.
