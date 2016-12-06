@@ -13,6 +13,11 @@ It is most important in this industry to store and process these logs in such a 
 
 ### Compression
 
-Below is a ...
+Below is a nice graph from Yahoo about how the different common compression algorithms rank in compression ratio vs compress/decompress time.
 
 ![space time tradeoff compression options]({{ site.github.url }}/images/yahoo-compression.png "Space-Time Tradeoff Compression")
+
+As can be expected there is a severe tradeoff between performace of compression ratio and CPU utilization. Log files are often written once, but used multiple times therefore the decompression hit can be significant. When analysing the log files in HIVE or Hadoop, there is also an understanding of "splittable" which should be considered allowing parallelization for decompression via map/reduce. 
+
+![compression options in hadoop]({{ site.github.url }}/images/yahoo-compression-algos.png "Compression Options in Hadoop")
+
