@@ -31,7 +31,7 @@ So what is the best way to compress your data for consumption in "Big Data Appli
 
 Sequence Files (along with Map Files) are a binary format which is splittable. The main use is to club your small log files into larger files, HIVE uses two formats RCFIle and ORCFile which can be queried across multiple rows and have a columnar layout inside. This is the best option if your logs are mainly analysed within HIVE or derivative applications.
 
-{% highlight hive linenos %}
+{% highlight sql linenos %}
 CREATE TABLE raw (line STRING)
    ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\n';
  
