@@ -1,9 +1,7 @@
 ---
 title: Compression & data storage for log files
 layout: post
-categories: data hive logs
 tags: data hive logs
-
 ---
 
 
