@@ -4,4 +4,10 @@ published: false
 layout: post
 ---
 
-GZIP provides a lossless compression, that is, we can recover the original data when decompressing it. It is based on the DEFLATE algorithm, which is a combination of LZ77 and Huffman coding.
+GZIP provides lossless compression, which in essence means we can recover the original data when decompressing it. It is based on the DEFLATE algorithm, a combination of LZ77 algorithm and Huffman coding.
+
+### LZ77 Algorithm
+
+The LZ77 algorithm simply replaces repeated occurences of the data with references to the original.
+
+### Huffman Coding
