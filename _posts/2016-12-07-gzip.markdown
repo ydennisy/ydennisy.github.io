@@ -8,9 +8,9 @@ GZIP provides lossless compression, which in essence means we can recover the or
 
 ### LZ77 Algorithm
 
-The LZ77 algorithm simply replaces repeated occurences of the data with references to the original.
+The LZ77 algorithm simply replaces repeated occurences of the data with references to the original. This method of compression has varying results for different documents, with highly repetitive documents benefitting greatly from this approach. 
 
-### Huffman Coding
+### Huffman Encoding
 
 This is a variable-length encoding method which assigns the shortest frequency codes to the most frequently occuring characters within a string.
 
@@ -23,7 +23,7 @@ ASCII Encoded: 01010100 01101000 01100101 00100000 01110001 01110101 01101001 01
 
 Huffman Encoded: 01110 10110 1010 110 01100 0100 00001 01010 111101 110 111110 1001 001 111111 00000 110 00011 001 111100 110 111010 0100 101111 01111 111000 110 001 111011 1010 1001 110 01011 10110 1010 110 10001 111001 00010 101110 110 10000 001 01101 
 ```
-You can see how much shorter the Huffman encoding is, 
+You can see from the above how much shorter the Huffman encoding is in terms of absolute binary. Below is a comparison of how the encoding method performs.
 
 ##### Memory requirements:
 ASCII: 344 bit
@@ -33,4 +33,4 @@ Huffman: 237 bit
 ASCII: 8 bit 
 Huffman: 4.5116279069767 bit
 
-###### Final Compression rate: 0.56395348837209 
+##### Final Compression rate: 0.56395348837209 
