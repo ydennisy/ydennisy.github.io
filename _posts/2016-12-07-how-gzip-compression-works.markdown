@@ -4,13 +4,13 @@ published: true
 layout: post
 ---
 
-GZIP provides lossless compression, which in essence means we can recover the original data when decompressing it. It is based on the DEFLATE algorithm, a combination of LZ77 algorithm and Huffman coding.
+GZIP provides lossless compression, which in essence means we can recover the original data when decompressing it. It is based on the DEFLATE algorithm, a combination of LZ77 algorithm and Huffman encoding.
 
 ### LZ77 Algorithm
 
 The LZ77 algorithm simply replaces repeated occurences of the data with references to the original. This method of compression has varying results for different documents, with highly repetitive documents benefitting greatly from this approach. A matchi is encoded by a pair of numbers called "length-distance pair" which is best described as:
 
-> "each of the next length characters is equal to the characters exactly distance characters behind it in the uncompressed stream"
+> "each of the next length of characters is equal to the characters exactly distance characters behind it in the uncompressed stream"
 
 ### Huffman Encoding
 
@@ -36,3 +36,9 @@ You can see from the above how much shorter the Huffman encoding is in terms of 
 * Huffman: 4.5116279069767 bit
 
 **Final Compression rate: 0.56395348837209**
+
+### So is GZIP the best compression algorithm?
+
+**No.**
+
+In future posts, I aim to explore and compare how best to compress huge TB size weblogs which are written once and used many times, from applications such as real time bidding systems.
