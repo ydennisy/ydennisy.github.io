@@ -1,5 +1,5 @@
 ---
-title: gzip
+title: How GZIP compression works
 published: true
 layout: post
 ---
@@ -8,7 +8,9 @@ GZIP provides lossless compression, which in essence means we can recover the or
 
 ### LZ77 Algorithm
 
-The LZ77 algorithm simply replaces repeated occurences of the data with references to the original. This method of compression has varying results for different documents, with highly repetitive documents benefitting greatly from this approach. 
+The LZ77 algorithm simply replaces repeated occurences of the data with references to the original. This method of compression has varying results for different documents, with highly repetitive documents benefitting greatly from this approach. A matchi is encoded by a pair of numbers called "length-distance pair" which is best described as:
+
+> "each of the next length characters is equal to the characters exactly distance characters behind it in the uncompressed stream"
 
 ### Huffman Encoding
 
