@@ -33,4 +33,4 @@ You can see from the above how much shorter the Huffman encoding is in terms of 
 * ASCII: 8 bit 
 * Huffman: 4.5116279069767 bit
 
-** Final Compression rate: 0.56395348837209 **
+**Final Compression rate: 0.56395348837209**
