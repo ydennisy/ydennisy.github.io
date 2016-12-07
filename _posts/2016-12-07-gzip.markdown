@@ -14,7 +14,7 @@ The LZ77 algorithm simply replaces repeated occurences of the data with referenc
 
 This is a variable-length encoding method which assigns the shortest frequency codes to the most frequently occuring characters within a string.
 
-Below is a comparison of a single word in regular ASCII encoding and also Huffman coding:
+Below is a comparison of a simple phrase in regular ASCII encoding and also Huffman coding:
 
 ```
 Original Text: The quick brown fox jumps over the lazy dog
@@ -23,3 +23,14 @@ ASCII Encoded: 01010100 01101000 01100101 00100000 01110001 01110101 01101001 01
 
 Huffman Encoded: 01110 10110 1010 110 01100 0100 00001 01010 111101 110 111110 1001 001 111111 00000 110 00011 001 111100 110 111010 0100 101111 01111 111000 110 001 111011 1010 1001 110 01011 10110 1010 110 10001 111001 00010 101110 110 10000 001 01101 
 ```
+You can see how much shorter the Huffman encoding is, 
+
+##### Memory requirements:
+ASCII: 344 bit
+Huffman: 237 bit
+
+##### Average code length:
+ASCII: 8 bit 
+Huffman: 4.5116279069767 bit
+
+###### Final Compression rate: 0.56395348837209 
