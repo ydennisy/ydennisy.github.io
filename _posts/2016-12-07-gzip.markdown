@@ -25,12 +25,12 @@ Huffman Encoded: 01110 10110 1010 110 01100 0100 00001 01010 111101 110 111110 1
 ```
 You can see from the above how much shorter the Huffman encoding is in terms of absolute binary. Below is a comparison of how the encoding method performs.
 
-##### Memory requirements:
+#### Memory requirements:
 * ASCII: 344 bit
 * Huffman: 237 bit
 
-##### Average code length:
+#### Average code length:
 * ASCII: 8 bit 
 * Huffman: 4.5116279069767 bit
 
-#### Final Compression rate: 0.56395348837209 
+** Final Compression rate: 0.56395348837209 **
