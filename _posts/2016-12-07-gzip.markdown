@@ -1,6 +1,6 @@
 ---
 title: gzip
-published: false
+published: true
 layout: post
 ---
 
