@@ -1,6 +1,9 @@
 ---
-Title: Novel Log Compression Algo
-Published: True
+title: Novel Log Compression Algo
+layout: post
+tags: compression logs algorithm
+published: True
 ---
+
 
 blah blha
