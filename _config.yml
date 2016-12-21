@@ -12,4 +12,4 @@ linkedin_username: dennisyurkevich
 
 # Build settings
 markdown: kramdown
-gems: ['jekyll-twitter-plugin']
+gems: 'jekyll-twitter-plugin'
